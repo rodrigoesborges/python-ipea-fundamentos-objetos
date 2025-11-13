@@ -33,7 +33,7 @@ def main(n_sim):
 
 
 if __name__ == '__main__':
-    n_simulation = 1000
+    n_simulation = 100
     n_students = 67
 
     # simulations(n_simulation, n_students)

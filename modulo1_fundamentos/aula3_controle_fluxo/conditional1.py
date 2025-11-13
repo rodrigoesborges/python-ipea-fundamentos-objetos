@@ -5,6 +5,7 @@
 
 
 def is_positive(x):
+    # esta é uma função...
     if x > 0:
         print(f'{x} é positivo')
     elif x < 0:

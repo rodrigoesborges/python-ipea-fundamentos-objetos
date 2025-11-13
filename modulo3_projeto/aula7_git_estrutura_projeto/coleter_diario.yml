@@ -1,0 +1,36 @@
+name: coletor_diario
+on:
+  schedule:
+    - cron: '0 13 * * *'  # 10h BRT (13h UTC)
+
+jobs:
+  coletar-dados:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Baixar o código
+      - name: Baixar código
+        uses: actions/checkout@v3
+      
+      # 2. Configurar Python
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      # 3. Instalar bibliotecas
+      - name: Instalar pandas e requests
+        run: pip install pandas requests
+      
+      # 4. Executar coleta
+      - name: Rodar coletor de dados
+        run: python coletor_ipea.py
+      
+      # 5. Salvar e enviar resultados
+      - name: Salvar e enviar dados
+        run: |
+          git config --local user.email "acao@github.com"
+          git config --local user.name "Robo GitHub"
+          git add dados/
+          git commit -m "📊 Dados de $(date +'%d/%m/%Y')"
+          git push

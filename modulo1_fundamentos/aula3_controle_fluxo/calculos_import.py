@@ -8,7 +8,7 @@ def imprime_lista(dados):
 
 
 def main():
-    dados = calculos_main.cria_lista()
+    dados = calculos_main.cria_lista(100)
     imprime_lista(dados)
 
 

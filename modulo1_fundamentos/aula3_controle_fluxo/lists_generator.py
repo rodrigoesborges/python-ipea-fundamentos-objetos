@@ -19,10 +19,10 @@ if __name__ == '__main__':
     #
     print(a)
     #
-    # for i in range(len(a)):
-    #     print(f'i = {i}')
-    #     print(a[i])
-    #     print(f'O i é {i} e o a[i] é {a[i]}')
+    for i in range(len(a)):
+        print(f'i = {i}')
+        print(a[i])
+        print(f'O i é {i} e o a[i] é {a[i]}')
 
-    # b = generate(5)
-    # print(b)
+    b = generate(5)
+    print(b)

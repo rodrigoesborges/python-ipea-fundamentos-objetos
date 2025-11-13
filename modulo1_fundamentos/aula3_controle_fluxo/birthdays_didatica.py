@@ -31,8 +31,8 @@ def prob(n, r):
 
 if __name__ == '__main__':
     # r é o número de iterações
-    r = 10000
-    n = 41
+    r = 1000
+    n = 50
     # b = birthdays(n)
     # print(b)
     # print(has_duplicates([2, 3, 4]))

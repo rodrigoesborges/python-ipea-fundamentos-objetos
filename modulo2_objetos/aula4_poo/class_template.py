@@ -46,7 +46,7 @@ if __name__ == '__main__':
     a = Template(1, 23, 50)
     a.method3()
     b = Template(0, 50, 23)
-    a.method1(25)
+    # a.method1(25)
     print(b.method2(a))
     print(f'Your lucky number is {b.luck}')
 

@@ -25,14 +25,14 @@ data.max(numeric_only=True)
 
 # Muito fácil de operar intercâmbio de dados.
 # Para salvar para EXCEL, sempre inclua ponto e vírgula como separador
-data.to_csv('nome_do_arquivo.csv', sep=';', index=False)
+data.to_csv('data/nome_do_arquivo.csv', sep=';', index=False)
 
 # Para ler o arquivo
-data = pd.read_csv('nome_do_arquivo.csv', sep=';')
+data = pd.read_csv('data/nome_do_arquivo.csv', sep=';')
 
 # Para deletar uma coluna
-data.to_csv('nome_do_arquivo_com_index.csv', sep=';')
-data = pd.read_csv('nome_do_arquivo_com_index.csv', sep=';')
+data.to_csv('data/nome_do_arquivo_com_index.csv', sep=';')
+data = pd.read_csv('data/nome_do_arquivo_com_index.csv', sep=';')
 data = data.drop('Unnamed: 0', axis=1)
 
 # Identificar nomes colunas

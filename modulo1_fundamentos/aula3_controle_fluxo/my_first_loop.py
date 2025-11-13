@@ -1,34 +1,34 @@
-# for i in 'hello world':
-#     print(i)
-#
-# for i in 'hello world':
-#     print(i.capitalize())
-#
-# for num in range(10):
-#     print(num)
+for i in 'hello world':
+    print(i)
 
-# for i in range(len('hello')):   #  é a mesma coisa range(5)
-#     print(i)
-#
-# for each in ['apples', 'bananas', 'peaches']:
-#     print(each)
-#
-#
-# for each in ['maria', 'joana', 'joaquim']:
-#     print(each.capitalize())
-#
-# for each in ['maria', 'joana', 'joaquim']:
-#     print(each.capitalize(), end=' ')
-#
-#
-# for each in ['maria', 'joana', 'joaquim']:
-#     print(each.capitalize())
-# #
-# print('maria', 'joana', 'joaquim')
-# print('maria', 'joana', 'joaquim', sep=' ** ')
+for i in 'hello world':
+    print(i.capitalize())
 
-# for each in range(10):
-#     print(f'{each} vezes {each} é {each ** 2}')
+for num in range(10):
+    print(num)
+
+for i in range(len('hello')):   #  é a mesma coisa range(5)
+    print(i)
+
+for each in ['apples', 'bananas', 'peaches']:
+    print(each)
+
+
+for each in ['maria', 'joana', 'joaquim']:
+    print(each.capitalize())
+
+for each in ['maria', 'joana', 'joaquim']:
+    print(each.capitalize(), end=' ')
+
+
+for each in ['maria', 'joana', 'joaquim']:
+    print(each.capitalize())
+#
+print('maria', 'joana', 'joaquim')
+print('maria', 'joana', 'joaquim', sep=' ** ')
+
+for each in range(10):
+    print(f'{each} vezes {each} é {each ** 2}')
 
 def taboada():
     print('Tentativa de uma taboada')

@@ -17,6 +17,5 @@ Text/
 
 # Dados grandes
 dados/raw/
-*.csv
-*.xlsx
+
 !dados/exemplos/sample_data.csv

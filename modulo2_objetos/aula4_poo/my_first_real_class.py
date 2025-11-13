@@ -1,5 +1,6 @@
 """This module contains a code example related to
 
+
 Think Python, 2nd Edition
 by Allen Downey
 http://thinkpython2.com
@@ -123,8 +124,17 @@ class Hand(Deck):
 
 
 if __name__ == '__main__':
+    zap = Card(0, 4)
+    print(zap)
+    espadilha = Card(3, 1)
+    print(espadilha)
+    print(zap > espadilha)
+    print('Python não sabe jogar truco?')
+    print(Card(3, 13) > Card(3, 12))
     deck = Deck()
+    print(deck)
     deck.shuffle()
+    print(deck)
     #
     pedro = Hand()
     #

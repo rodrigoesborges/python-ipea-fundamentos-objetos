@@ -5,7 +5,7 @@ Somente retorne a soma se ambos os valores forem válidos.
 Insista para que o usuário insira números válidos caso ele cometa um erro."""
 
 # Dica 2: use um loop while para continuar pedindo a entrada até que valores válidos sejam fornecidos.
-# Dica 3: use break para sair do loop quando valores válidos forem obtidos.
+# Dica 3: use lista == len(2) para sair do loop quando valores válidos forem obtidos.
 # Dica 4: use len() para verificar a quantidade de valores a serem somados.
 
 

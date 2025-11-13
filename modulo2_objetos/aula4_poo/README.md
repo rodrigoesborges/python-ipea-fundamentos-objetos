@@ -55,6 +55,7 @@ media_precos = analisador.calcular_media("precos")
 2. `my_first_class.py`
 3. `class_template.py`
 4. inheritance: `my_second_class.py`
+5. Exemplo fun: `batalha.py`
 
 **Exercício**
     
@@ -65,6 +66,9 @@ media_precos = analisador.calcular_media("precos")
  - Como resolver essa dificuldade?
  - Qual outro método seria necessário? (dica: output?)
  - Exemplo: use o `debug` para ver que minute = 61. Logo, ajustes são necessários
+
+**Extra**
+- Acrescente dias e anos no exemplo!
 
 # Persistência
 
@@ -100,7 +104,19 @@ recover_list()
 
 # Utilização sum_list()
 ```
-4. Arquivo. `my_first_file.py` 
+
+4. Detalhe:
+- o `with open()` garante que o arquivo é fechado depois que utilizado
+- o primeiro parâmetro é o caminho do arquivo, o segundo é o modo como será aberto: `with open('dados.txt', 'a')` 
+- o `as f` oferece o **handle**, a maçaneta que você utiliza para operar o arquivo: `f.read()` `f.write()`
+
+
+```python
+with open('dados.txt', 'a') as f:  # f é a "maçaneta"
+    f.write('Novo dado')           # Usando a maçaneta para escrever
+# Arquivo fecha sozinho 
+```
+5. Arquivo. `my_first_file.py` 
 5. **Cuidados**:
 - **'w'** acidental: Perde tudo que estava salvo! Talvez melhor seja **'a'**
 - Esquecer de converter: Números viram texto → precisa converter de volta
@@ -114,17 +130,7 @@ recover_list()
 - Exportar resultados para Excel/qualquer outro programa+
 - Fazer backup de dados importantes
 
-7. Detalhe:
-- o `with open()` garante que o arquivo é fechado depois que utilizado
-- o primeiro parâmetro é o caminho do arquivo, o segundo é o modo como será aberto: `with open('dados.txt', 'a')` 
-- o `as f` oferece o **handle**, a maçaneta que você utiliza para operar o arquivo: `f.read()` `f.write()`
 
-
-```python
-with open('dados.txt', 'a') as f:  # f é a "maçaneta"
-    f.write('Novo dado')           # Usando a maçaneta para escrever
-# Arquivo fecha sozinho 
-```
 
 8. E se quisermos salvar uma lista de nomes? E um dicionário? Como faríamos?
 

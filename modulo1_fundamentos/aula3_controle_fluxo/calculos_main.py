@@ -3,9 +3,9 @@ import random
 import calculos_teste
 
 
-def cria_lista():
+def cria_lista(n=10):
     dados = list()
-    for i in range(5):
+    for i in range(n):
         dados.append(random.randint(1, 100))
     return dados
 
